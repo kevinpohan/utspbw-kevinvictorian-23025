@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan HTML dan CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f0f8ff;
+            color: #004080;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            color: #002f6c;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 48%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+        .btn-home {
+            display: block;
+            width: 200px;
+            margin: 30px auto 0;
+            padding: 10px;
+            text-align: center;
+            background-color: #004080;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn-home:hover {
+            background-color: #002f6c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pengenalan HTML dan CSS</h1>
+        <p><strong>HTML (HyperText Markup Language)</strong> adalah bahasa yang digunakan untuk membuat struktur halaman web. HTML terdiri dari elemen-elemen seperti heading, paragraf, gambar, dan link.</p>
+        <p><strong>CSS (Cascading Style Sheets)</strong> digunakan untuk mengatur tampilan dan desain halaman web, termasuk warna, font, tata letak, dan animasi.</p>
+        
+        <h2>Contoh Pengaplikasian HTML dan CSS</h2>
+        <p>Dalam perkuliahan saya mencoba untuk membuat biodata dan form menggunakan html dan css</p>
+        <div class="image-container">
+            <img src="/aset/cth-html.png" alt="Contoh kode HTML">
+            <img src="/aset/cth-css.png" alt="Contoh hasil tampilan dengan CSS">
+        </div>
+        
+        <a href="/Home.html" class="btn-home">Kembali ke Home</a>
+    </div>
+</body>
+</html>

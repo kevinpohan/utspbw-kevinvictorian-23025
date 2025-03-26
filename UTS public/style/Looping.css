@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: #1e3c72;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+
+input {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, blue, blueviolet);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #0056b3, #003d82);
+}
+
+
+.result-box {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #1e3c72;
+    font-size: 16px;
+}
+
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+
+.btn-home {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+
+.btn-home:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #0056b3, #003d82);
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}

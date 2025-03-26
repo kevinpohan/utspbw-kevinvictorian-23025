@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 70px; 
+}
+
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h1 {
+    font-size: 28px;
+    color: #1e3c72;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1e3c72;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    main {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    main {
+        max-width: 85%;
+    }
+}
+
+/* Desktop (1025px ke atas) */
+@media (min-width: 1025px) {
+    main {
+        max-width: 800px;
+    }
+}

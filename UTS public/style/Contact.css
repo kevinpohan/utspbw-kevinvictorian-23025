@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 70px; 
+    text-align: center;
+}
+
+
+main {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+
+h1 {
+    font-size: 28px;
+    color: #1e3c72;
+    margin-bottom: 15px;
+}
+
+
+p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left; 
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #1e3c72;
+    outline: none;
+}
+
+
+button {
+    background: #1e3c72;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #2a5298;
+    transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+
+/*  Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    body {
+        padding-top: 55px; /* Navbar lebih kecil di mobile */
+    }
+
+    main {
+        max-width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    main {
+        max-width: 80%;
+    }
+}
+
+/* Desktop (1025px ke atas) */
+@media (min-width: 1025px) {
+    main {
+        max-width: 700px;
+    }
+}

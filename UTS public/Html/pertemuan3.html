@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan PHP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        p {
+            text-align: justify;
+        }
+        .btn-home {
+            display: block;
+            width: 200px;
+            margin: 30px auto 0;
+            padding: 10px;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn-home:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pengenalan PHP</h1>
+        <p><strong>PHP (Hypertext Preprocessor)</strong> adalah bahasa pemrograman sisi server yang digunakan untuk mengembangkan aplikasi web dinamis. PHP dapat digunakan untuk menangani formulir, mengakses database, mengelola sesi pengguna, dan banyak lagi.</p>
+        
+        <h2>Keunggulan PHP</h2>
+        <ul>
+            <li>Mudah dipelajari dan digunakan.</li>
+            <li>Dapat berjalan di berbagai sistem operasi seperti Windows, Linux, dan macOS.</li>
+            <li>Terintegrasi dengan berbagai database seperti MySQL, PostgreSQL, dan SQLite.</li>
+            <li>Mendukung berbagai framework seperti Laravel, CodeIgniter, dan Symfony.</li>
+            <li>Gratis dan memiliki komunitas yang besar.</li>
+        </ul>
+        
+        <h2>Contoh Penggunaan PHP</h2>
+        <p>Berikut adalah contoh kode PHP sederhana yang menampilkan teks "Halo, dunia!":</p>
+        <pre>
+            &lt;?php
+                echo "Halo, dunia!";
+            ?&gt;
+        </pre>
+        
+        <p>PHP juga sering digunakan untuk mengakses database. Berikut contoh kode sederhana untuk mengambil data dari database MySQL:</p>
+        <pre>
+            &lt;?php
+                $conn = new mysqli("localhost", "root", "", "database");
+                if ($conn->connect_error) {
+                    die("Koneksi gagal: " . $conn->connect_error);
+                }
+                $result = $conn->query("SELECT * FROM users");
+                while ($row = $result->fetch_assoc()) {
+                    echo $row["nama"] . "<br>";
+                }
+                $conn->close();
+            ?&gt;
+        </pre>
+        
+        <a href="/Home.html" class="btn-home">Kembali ke Home</a>
+    </div>
+</body>
+</html>
